@@ -94,15 +94,15 @@ const googleFacebookVerifyCallback = async (accessToken, refreshToken, profile, 
 }
 
 const googleStrategy = new GoogleStrategy({
-    clientID: process.env.GOOGLE_CLIENT_ID,
-    clientSecret: process.env.GOOGLE_CLIENT_SECRET,
+    clientID: "583832591167-t64cf2lmvst3dagtl90t4q87m0h0urbr.apps.googleusercontent.com",
+    clientSecret: "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",
     callbackURL: "/login/google/redirect"
 }, googleFacebookVerifyCallback)
 passport.use(googleStrategy);
 
 const facebookStrategy = new FacebookStrategy({
-    clientID: process.env.FACEBOOK_CLIENT_ID,
-    clientSecret: process.env.FACEBOOK_CLIENT_SECRET,
+    clientID: "373877705120950",
+    clientSecret: "cc665b69e1e7811f52d66ab35dd66b8c",
     callbackURL: '/login/facebook/callback',
     profileFields: ['id', 'email', 'gender', 'link', 'locale', 'name', 'timezone', 'updated_time', 'verified'],
 }, googleFacebookVerifyCallback)
