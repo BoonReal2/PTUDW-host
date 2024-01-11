@@ -197,10 +197,10 @@ map.on("load", async () => {
       ? ""
       : document.querySelector("#district-filter").innerText.trim();
 
-  //Init location
-  if (ward != "" || district != "") {
-    initLngLat(district, ward);
-  }
+  // //Init location
+  // if (ward != "" || district != "") {
+  //   initLngLat(district, ward);
+  // }
 
   filterSipulated.features = sipulated.features.filter((p) => {
     return (
