@@ -15,7 +15,7 @@ const {
   BoardRequest,
   sequelize,
 } = require("../models");
-const severPath = "http://localhost:5000/";
+const severPath = "https://ptudw-officer.onrender.com";
 const checkInput = require("../util/checkInput");
 const { createWardDistrictPageQueryString } = require("../util/queryString");
 const bcrypt = require("bcrypt");
